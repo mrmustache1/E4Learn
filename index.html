@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="nameDiv">
+        <h1 class="name">Caleb Warren</h1>
+        <ul class="nameList">
+            <li>This is the website I am making</li>
+            <li>for assignment E4: Learn</li>
+            <br/>
+            <li>Class: EGS6101</li>
+        </ul>
+    </div>
+
+    <!--busses for projects-->
+
+    <div>
+        <h2>Projects: </h2>
+        <div class="images">
+            <a href = "https://google.com">
+                <div class="project">
+                    <div class="banner">
+                        <h2>Project</h2>
+                        <p>Description</p>
+                    </div>
+                    <img src="https://pm1.narvii.com/6219/15762dc4a61b27ae17b116d0b7af66ebc710a901_hq.jpg">
+                </div>
+            </a>
+            <a href = "https://google.com">
+                <div class="project">
+                    <div class="banner">
+                        <h2>Project</h2>
+                        <p>Description</p>
+                    </div>
+                    <img src="https://pm1.narvii.com/6219/15762dc4a61b27ae17b116d0b7af66ebc710a901_hq.jpg">
+                </div>
+            </a>
+            <a href = "https://google.com">
+                <div class="project">
+                    <div class="banner">
+                        <h2>Project</h2>
+                        <p>Description</p>
+                    </div>
+                    <img src="https://pm1.narvii.com/6219/15762dc4a61b27ae17b116d0b7af66ebc710a901_hq.jpg">
+                </div>
+            </a>
+        </div>
+    </div>
+
+<!--styling-->
+
+<style>
+
+    *{
+        margin:0;
+        padding:0;
+    }
+
+    body{
+        max-width: 100vw;
+        background-color:rgb(252, 171, 171);
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        overflow: hidden;
+    }
+
+    .nameDiv{
+        text-align:center;
+    }
+
+    .name{
+        font-size: 6vw;
+    }
+
+    .nameList{
+        margin-top: 10px;
+        font-size: 2vw;
+    }
+ 
+    img{
+        max-width: 50vw;
+        height: 25vw;
+    }
+
+    .images{
+        z-index: 2;
+        display: flex;
+        width: 100vw;
+        max-width: 100vw;
+        text-align: center;
+        overflow-x: scroll;
+        height: 500px;
+    }
+
+    .project{
+        margin: 10px;
+        position: relative;
+        height: fit-content;
+        background-color: black;
+    }
+
+    .banner{
+        display: none;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    .img:hover img{
+        opacity: 0.5;
+        display: block;
+    }
+
+    .project:hover .banner{
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        display: block;
+        width: 100%;
+        height: 100%;
+        font-size: 20px;
+    }    
+
+</style>
+
+</body>
+</html>
